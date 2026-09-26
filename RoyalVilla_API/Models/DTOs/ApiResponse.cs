@@ -31,6 +31,9 @@
         public static ApiResponse<TData> NoContent(string message) =>
             Create(true, StatusCodes.Status204NoContent, message);
 
+        public static ApiResponse<TData> UnAuthorized(string message) =>
+            Create(false, StatusCodes.Status401Unauthorized, message);
+
         public static ApiResponse<TData> NotFound(string message) =>
             Create(false, StatusCodes.Status404NotFound, message);
 
