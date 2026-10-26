@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 
-namespace RoyalVilla_API.Models.DTOs
+namespace RoyalVilla.DTO
 {
     public class LoginRequestDto
     {

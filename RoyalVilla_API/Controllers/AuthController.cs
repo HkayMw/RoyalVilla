@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using RoyalVilla_API.Models.DTOs;
+using RoyalVilla.DTO;
 using RoyalVilla_API.Services;
 
 namespace RoyalVilla_API.Controllers

@@ -2,10 +2,9 @@
 using RoyalVilla_API.Data;
 using RoyalVilla_API.Models;
 using Microsoft.EntityFrameworkCore;
-using RoyalVilla_API.Models.DTOs;
 using AutoMapper;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Authorization;
+using RoyalVilla.DTO;
 
 namespace RoyalVilla_API.Controllers
 {

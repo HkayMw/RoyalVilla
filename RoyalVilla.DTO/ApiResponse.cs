@@ -1,4 +1,6 @@
-﻿namespace RoyalVilla_API.Models.DTOs
+﻿using Microsoft.AspNetCore.Http;
+
+namespace RoyalVilla.DTO
 {
     public class ApiResponse<TData>
     {
