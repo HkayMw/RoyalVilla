@@ -11,5 +11,7 @@
         public string? ImageUrl { get; set; }
         public DateTime CreatedDate { get; set; } = DateTime.Now;
         public DateTime? UpdatedDate { get; set; }
+
+        public ICollection<VillaAmenities>? Amenities { get; set; }
     }
 }

@@ -47,6 +47,12 @@ builder.Services.AddAutoMapper(o =>
     o.CreateMap<RegistrationRequestDto, User>();
     o.CreateMap<User, UserDto>();
     o.CreateMap<LoginResponseDto, User>();
+    o.CreateMap<CreateVillaAmenitiesDto, VillaAmenities>();
+    o.CreateMap<UpdateVillaAmenitiesDto, VillaAmenities>();
+    o.CreateMap<VillaAmenities, VillaAmenitiesDto>()
+        .ForMember(dest => dest.VillaName,
+            opt => opt.MapFrom(src => src.Villa != null ? src.Villa.Name : null)
+        );
 });
 
 
