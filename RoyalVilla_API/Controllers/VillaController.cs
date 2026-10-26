@@ -8,7 +8,7 @@ using RoyalVilla.DTO;
 
 namespace RoyalVilla_API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/villa")]
     [ApiController]
     public class VillaController : ControllerBase
     {
@@ -167,7 +167,7 @@ namespace RoyalVilla_API.Controllers
 
         }
 
-        [HttpDelete]
+        [HttpDelete("{id:int}")]
         [ProducesResponseType(typeof(ApiResponse<object>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ApiResponse<object>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(ApiResponse<object>), StatusCodes.Status404NotFound)]
